@@ -1,29 +1,29 @@
 # GitHub Actions CI/CD Pipeline Configuration
 
-## 1. Workflow Pipeline (`.github/workflows/deploy.yml`)
+## 1. Workflow Architecture
 
-The GitHub Actions workflow executes two sequential jobs:
+The deployment pipeline is organized into two stages:
 
 ```
 ┌────────────────────────────────────────────────────────┐
-│                   GitHub Actions CI                    │
+│             Stage 1: CI Pipeline (.github/workflows/ci.yml)
 │  - Checkout repository                                 │
 │  - Node.js 22 runtime setup                            │
 │  - npm ci (frontend & backend)                         │
 │  - Automated tests (Vitest)                            │
-│  - Secret bundle leak audit                            │
 │  - TypeScript & Vite builds                            │
-│  - Docker build test                                   │
+│  - Secret bundle leak audit                            │
+│  - Docker multi-stage build validation                 │
 └───────────────────────────┬────────────────────────────┘
-                            │ (On push to 'main' branch)
+                            │ (On successful completion)
                             ▼
 ┌────────────────────────────────────────────────────────┐
-│                   GitHub Actions CD                    │
-│  - Keyless GCP Authentication via WIF                  │
+│             Stage 2: CD Pipeline (.github/workflows/cd.yml)
+│  - GCP Service Account Key Authentication              │
 │  - Docker authentication with Artifact Registry        │
-│  - Build & Tag: :${{ github.sha }} and :latest         │
-│  - Push image to Artifact Registry                     │
-│  - Deploy revision to Google Cloud Run                 │
+│  - Build & Tag production container image              │
+│  - Push image to Artifact Registry (asia-south1)       │
+│  - Deploy container revision to Google Cloud Run       │
 │  - Health probe verification (/health)                 │
 │  - Output deployed production URL                      │
 └────────────────────────────────────────────────────────┘
@@ -35,25 +35,25 @@ The GitHub Actions workflow executes two sequential jobs:
 
 In your GitHub repository (**Settings** → **Secrets and variables** → **Actions**):
 
-### Repository Variables (`vars.*`)
-Add the following under the **Variables** tab:
-
-| Variable Name | Example Value | Description |
-| :--- | :--- | :--- |
-| `GCP_PROJECT_ID` | `my-gcp-project-12345` | Your Google Cloud Project ID |
-| `GCP_REGION` | `us-central1` | Google Cloud region for deployment |
-| `ARTIFACT_REGISTRY_REPO` | `document-chaser` | Name of your Artifact Registry repository |
-| `CLOUD_RUN_SERVICE` | `document-chaser` | Name of your Cloud Run service |
-| `WIF_PROVIDER` | `projects/123456789/locations/global/workloadIdentityPools/github-pool/providers/github-provider` | Full Workload Identity Provider resource name |
-| `WIF_SERVICE_ACCOUNT` | `github-deployer@my-gcp-project-12345.iam.gserviceaccount.com` | Email of the deployment service account |
-
 ### Repository Secrets (`secrets.*`)
-- **None required!** The Gemini API key is securely managed in **Google Secret Manager** and mounted directly into Cloud Run via `--set-secrets`. No API keys or credentials are stored in GitHub Actions.
+
+| Secret Name | Description |
+| :--- | :--- |
+| `GCP_SA_KEY` | Full JSON service account key containing deployment credentials |
+
+### Repository Variables (`vars.*`)
+
+| Variable Name | Value | Description |
+| :--- | :--- | :--- |
+| `GCP_PROJECT_ID` | `slabspro-slabsuser35` | Google Cloud Project ID |
+| `GCP_REGION` | `asia-south1` | Google Cloud region for deployment (Mumbai) |
+| `ARTIFACT_REGISTRY_REPO` | `document-chaser` | Artifact Registry Docker repository name |
+| `CLOUD_RUN_SERVICE` | `document-chaser` | Google Cloud Run service name |
 
 ---
 
-## 3. Security Highlights
+## 3. Production Characteristics
 
-- **No Long-Lived Service Account Keys:** No JSON credentials stored in GitHub Secrets.
-- **Audience & Repository Restriction:** WIF strictly restricts access to `attribute.repository == 'KatikiReddy-Sujith-Reddy/document-chaser'`.
-- **Immutable Artifact Tags:** Every deployment creates and deploys an image tagged with the exact Git commit SHA.
+- **Docker in CI/CD:** All container builds occur inside GitHub Actions hosted runners without requiring local Docker Desktop.
+- **Region-Enforced Infrastructure:** Artifact Registry, Secret Manager, and Cloud Run are all provisioned in `asia-south1` (Mumbai).
+- **Zero Secret Bundling:** Gemini API keys are mounted securely from Google Secret Manager at runtime and never baked into the container or client bundle.

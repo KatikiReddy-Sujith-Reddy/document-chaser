@@ -1,0 +1,101 @@
+name: CD Pipeline
+
+on:
+  workflow_run:
+    workflows: ["CI Pipeline"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+env:
+  GCP_PROJECT_ID: ${{ vars.GCP_PROJECT_ID || 'slabspro-slabsuser35' }}
+  GCP_REGION: ${{ vars.GCP_REGION || 'asia-south1' }}
+  ARTIFACT_REPO: ${{ vars.ARTIFACT_REGISTRY_REPO || 'document-chaser' }}
+  SERVICE_NAME: ${{ vars.CLOUD_RUN_SERVICE || 'document-chaser' }}
+
+jobs:
+  cd:
+    name: Continuous Deployment
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Authenticate to Google Cloud
+        id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - name: Set up Google Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Configure Docker for Artifact Registry
+        run: gcloud auth configure-docker ${{ env.GCP_REGION }}-docker.pkg.dev --quiet
+
+      - name: Generate Image Tag
+        id: meta
+        run: |
+          IMAGE_BASE="${{ env.GCP_REGION }}-docker.pkg.dev/${{ env.GCP_PROJECT_ID }}/${{ env.ARTIFACT_REPO }}/${{ env.SERVICE_NAME }}"
+          COMMIT_SHA="${{ github.event.workflow_run.head_sha || github.sha }}"
+          echo "image_sha=${IMAGE_BASE}:${COMMIT_SHA}" >> $GITHUB_OUTPUT
+          echo "image_latest=${IMAGE_BASE}:latest" >> $GITHUB_OUTPUT
+
+      - name: Build and tag production Docker image
+        run: |
+          docker build \
+            -t ${{ steps.meta.outputs.image_sha }} \
+            -t ${{ steps.meta.outputs.image_latest }} \
+            .
+
+      - name: Push image to Google Artifact Registry
+        run: |
+          docker push ${{ steps.meta.outputs.image_sha }}
+          docker push ${{ steps.meta.outputs.image_latest }}
+
+      - name: Deploy to Google Cloud Run
+        id: deploy
+        run: |
+          SERVICE_URL=$(gcloud run deploy ${{ env.SERVICE_NAME }} \
+            --image ${{ steps.meta.outputs.image_sha }} \
+            --region ${{ env.GCP_REGION }} \
+            --platform managed \
+            --allow-unauthenticated \
+            --port 8080 \
+            --max-instances 1 \
+            --concurrency 80 \
+            --set-secrets "GOOGLE_API_KEY=gemini-api-key:latest" \
+            --set-env-vars "PORT=8080,HOST=0.0.0.0,DATABASE_URL=file:./data/chaser.db,AS_OF_DATE=2026-11-12,BASELINE_MEDIAN_DAYS=17,BASELINE_ROUNDS=3,GEMINI_MODEL=gemini-2.5-flash" \
+            --format='value(status.url)')
+
+          echo "service_url=${SERVICE_URL}" >> $GITHUB_OUTPUT
+          echo "Deployed successfully to: ${SERVICE_URL}"
+
+      - name: Verify Deployment Health
+        run: |
+          SERVICE_URL="${{ steps.deploy.outputs.service_url }}"
+          echo "Testing health check at: ${SERVICE_URL}/health"
+          for i in $(seq 1 15); do
+            STATUS=$(curl -s -o /dev/null -w "%{http_code}" "${SERVICE_URL}/health" || true)
+            if [ "$STATUS" = "200" ]; then
+              echo "Health check succeeded with status 200 OK!"
+              exit 0
+            fi
+            echo "Attempt $i: Received status $STATUS. Retrying in 5s..."
+            sleep 5
+          done
+          echo "Health check failed after 15 attempts."
+          exit 1
+
+      - name: Deployment Summary
+        run: |
+          echo "### Deployment Successful! 🚀" >> $GITHUB_STEP_SUMMARY
+          echo "- **Service Name:** \`${{ env.SERVICE_NAME }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "- **Region:** \`${{ env.GCP_REGION }}\` (Asia South 1 Mumbai)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Image SHA:** \`${{ steps.meta.outputs.image_sha }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "- **Public URL:** [${{ steps.deploy.outputs.service_url }}](${{ steps.deploy.outputs.service_url }})" >> $GITHUB_STEP_SUMMARY
