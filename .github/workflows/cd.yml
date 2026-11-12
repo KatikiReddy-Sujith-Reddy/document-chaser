@@ -70,7 +70,7 @@ jobs:
             --max-instances 1 \
             --concurrency 80 \
             --set-secrets "GOOGLE_API_KEY=gemini-api-key:latest" \
-            --set-env-vars "PORT=8080,HOST=0.0.0.0,DATABASE_URL=file:./data/chaser.db,AS_OF_DATE=2026-11-12,BASELINE_MEDIAN_DAYS=17,BASELINE_ROUNDS=3,GEMINI_MODEL=gemini-2.5-flash" \
+            --set-env-vars "HOST=0.0.0.0,DATABASE_URL=file:./data/chaser.db,AS_OF_DATE=2026-11-12,BASELINE_MEDIAN_DAYS=17,BASELINE_ROUNDS=3,GEMINI_MODEL=gemini-2.5-flash" \
             --format='value(status.url)')
 
           echo "service_url=${SERVICE_URL}" >> $GITHUB_OUTPUT
