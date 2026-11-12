@@ -1,0 +1,25 @@
+services:
+  document-chaser:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: document-chaser:latest
+    container_name: document-chaser
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      - HOST=0.0.0.0
+      - DATABASE_URL=file:./data/chaser.db
+      - AS_OF_DATE=2026-11-12
+      - BASELINE_MEDIAN_DAYS=17
+      - BASELINE_ROUNDS=3
+      - GEMINI_MODEL=gemini-2.5-flash
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY:-}
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+    restart: unless-stopped
+    volumes:
+      - chaser-data:/app/data
+
+volumes:
+  chaser-data:

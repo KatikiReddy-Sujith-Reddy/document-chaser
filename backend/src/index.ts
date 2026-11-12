@@ -2,6 +2,14 @@ import { config } from "./config.js";
 import { db } from "./db/client.js";
 import { createDraftService } from "./services/draftService.js";
 import { createApp } from "./app.js";
+import { seedDatabase } from "./db/seed.js";
+
+// Initialize database with migrations and default seed cases if starting fresh
+try {
+  await seedDatabase(db, true);
+} catch (error) {
+  console.warn("[db] Automatic seed check warning:", error);
+}
 
 const app = createApp({
   database: db,
@@ -16,6 +24,7 @@ const app = createApp({
   },
 });
 
-app.listen(config.port, "127.0.0.1", () => {
-  console.log(`Document Chaser API listening on 127.0.0.1:${config.port}`);
+const host = process.env.HOST ?? "0.0.0.0";
+app.listen(config.port, host, () => {
+  console.log(`Document Chaser listening on ${host}:${config.port}`);
 });
