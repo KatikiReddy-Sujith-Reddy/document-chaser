@@ -1,0 +1,47 @@
+{
+  "isSynthetic": true,
+  "client": {
+    "id": "client-harbor",
+    "name": "Harbor Dental Group",
+    "clientType": "corporate",
+    "isSynthetic": true
+  },
+  "case": {
+    "id": "CS-1052",
+    "clientId": "client-harbor",
+    "rmName": "S. Reyes",
+    "openedOn": "2026-10-27",
+    "approvedOn": "2026-11-10",
+    "status": "awaiting_client",
+    "isSynthetic": true
+  },
+  "requirements": [
+    { "id": "1052-INC", "caseId": "CS-1052", "requirementCode": "INC", "requestedOn": "2026-10-12", "receivedOn": "2026-10-17", "status": "received", "isSynthetic": true },
+    { "id": "1052-DIR", "caseId": "CS-1052", "requirementCode": "DIR", "requestedOn": "2026-10-12", "receivedOn": "2026-10-19", "status": "received", "isSynthetic": true },
+    { "id": "1052-ADDR", "caseId": "CS-1052", "requirementCode": "ADDR", "requestedOn": "2026-10-12", "receivedOn": "2026-10-18", "status": "received", "isSynthetic": true },
+    { "id": "1052-OWN", "caseId": "CS-1052", "requirementCode": "OWN", "requestedOn": null, "receivedOn": null, "status": "missing", "isSynthetic": true },
+    { "id": "1052-TAX", "caseId": "CS-1052", "requirementCode": "TAX", "requestedOn": null, "receivedOn": null, "status": "missing", "isSynthetic": true },
+    { "id": "1052-BANK", "caseId": "CS-1052", "requirementCode": "BANK", "requestedOn": "2026-10-13", "receivedOn": "2026-10-20", "status": "received", "isSynthetic": true },
+    { "id": "1052-ART", "caseId": "CS-1052", "requirementCode": "ART", "requestedOn": "2026-10-14", "receivedOn": "2026-10-20", "status": "received", "isSynthetic": true },
+    { "id": "1052-ID", "caseId": "CS-1052", "requirementCode": "ID", "requestedOn": null, "receivedOn": null, "status": "missing", "isSynthetic": true },
+    { "id": "1052-RES", "caseId": "CS-1052", "requirementCode": "RES", "requestedOn": null, "receivedOn": null, "status": "missing", "isSynthetic": true },
+    { "id": "1052-FIN", "caseId": "CS-1052", "requirementCode": "FIN", "requestedOn": null, "receivedOn": null, "status": "missing", "isSynthetic": true }
+  ],
+  "documents": [
+    { "id": "1052-doc-inc", "caseId": "CS-1052", "requirementCode": "INC", "issuedOn": "2026-10-06", "expiresOn": null, "legible": true, "submittedOn": "2026-10-17", "isSynthetic": true },
+    { "id": "1052-doc-dir", "caseId": "CS-1052", "requirementCode": "DIR", "issuedOn": "2026-10-06", "expiresOn": null, "legible": true, "submittedOn": "2026-10-19", "isSynthetic": true },
+    { "id": "1052-doc-addr", "caseId": "CS-1052", "requirementCode": "ADDR", "issuedOn": "2026-10-08", "expiresOn": null, "legible": true, "submittedOn": "2026-10-18", "isSynthetic": true },
+    { "id": "1052-doc-bank", "caseId": "CS-1052", "requirementCode": "BANK", "issuedOn": "2026-10-08", "expiresOn": null, "legible": true, "submittedOn": "2026-10-20", "isSynthetic": true },
+    { "id": "1052-doc-art", "caseId": "CS-1052", "requirementCode": "ART", "issuedOn": "2026-10-08", "expiresOn": null, "legible": true, "submittedOn": "2026-10-20", "isSynthetic": true }
+  ],
+  "events": [
+    { "id": "1052-request-1", "caseId": "CS-1052", "type": "requested", "occurredOn": "2026-10-12", "payload": "{}", "isSynthetic": true },
+    { "id": "1052-request-2", "caseId": "CS-1052", "type": "requested", "occurredOn": "2026-10-16", "payload": "{}", "isSynthetic": true },
+    { "id": "1052-request-3", "caseId": "CS-1052", "type": "requested", "occurredOn": "2026-10-20", "payload": "{}", "isSynthetic": true },
+    { "id": "1052-received-inc", "caseId": "CS-1052", "type": "received", "occurredOn": "2026-10-17", "payload": "{\"requirementCode\":\"INC\"}", "isSynthetic": true },
+    { "id": "1052-received-dir", "caseId": "CS-1052", "type": "received", "occurredOn": "2026-10-19", "payload": "{\"requirementCode\":\"DIR\"}", "isSynthetic": true },
+    { "id": "1052-received-bank", "caseId": "CS-1052", "type": "received", "occurredOn": "2026-10-20", "payload": "{\"requirementCode\":\"BANK\"}", "isSynthetic": true },
+    { "id": "1052-received-art", "caseId": "CS-1052", "type": "received", "occurredOn": "2026-10-20", "payload": "{\"requirementCode\":\"ART\"}", "isSynthetic": true },
+    { "id": "1052-approved", "caseId": "CS-1052", "type": "approved", "occurredOn": "2026-11-10", "payload": "{}", "isSynthetic": true }
+  ]
+}

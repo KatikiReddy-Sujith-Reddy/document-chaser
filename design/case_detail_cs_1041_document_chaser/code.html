@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"error":"#ffb4ab","outline-variant":"#5e3f3b","on-surface-variant":"#e9bcb6","tertiary-fixed-dim":"#bcc4f3","surface-base":"#0F0F0F","secondary-fixed":"#e4e2e1","on-error":"#690005","inverse-surface":"#e5e2e1","surface":"#131313","primary-container":"#e50914","primary-fixed-dim":"#ffb4aa","error-container":"#93000a","surface-container-high":"#2a2a2a","surface-container-low":"#1c1b1b","secondary":"#c8c6c6","tertiary-container":"#68709a","outline":"#af8782","on-secondary-fixed":"#1b1c1c","tertiary":"#bcc4f3","surface-canvas":"#141414","on-primary-container":"#fff7f6","on-error-container":"#ffdad6","secondary-fixed-dim":"#c8c6c6","secondary-container":"#474747","on-primary":"#690003","inverse-primary":"#c0000c","text-muted":"#A3A3A3","on-tertiary-fixed-variant":"#3c456c","brand-red-hover":"#F40612","surface-container":"#201f1f","text-primary":"#FFFFFF","surface-tint":"#ffb4aa","surface-container-highest":"#353534","primary":"#ffb4aa","on-primary-fixed-variant":"#930007","tertiary-fixed":"#dde1ff","surface-card":"#181818","background":"#131313","on-secondary-container":"#b6b5b4","surface-bright":"#393939","primary-fixed":"#ffdad5","surface-container-lowest":"#0e0e0e","on-tertiary-container":"#faf8ff","on-secondary":"#303030","on-background":"#e5e2e1","surface-overlay":"#232323","on-secondary-fixed-variant":"#474747","inverse-on-surface":"#313030","on-tertiary-fixed":"#0f193d","on-tertiary":"#252e54","surface-variant":"#353534","surface-dim":"#131313","on-surface":"#e5e2e1","on-primary-fixed":"#410001"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-lg":"1.5rem","space-xl":"2.5rem","gutter":"1rem","margin":"1rem","margin-desktop":"3.5rem","space-xs":"0.25rem","space-sm":"0.5rem","gutter-desktop":"1.5rem","margin-tablet":"2rem","space-md":"1rem"},fontFamily:{"label-sm":["Geist"],"headline-lg-mobile":["Geist"],"headline-lg":["Geist"],"label-md":["Geist"],"label-lg":["Geist"],"headline-md":["Geist"],"headline-sm":["Geist"],"body-md":["Geist"],"display-hero-mobile":["Geist"],"display-hero":["Geist"],"body-sm":["Geist"],"body-lg":["Geist"]},fontSize:{"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"700"}],"headline-lg-mobile":["24px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"display-hero-mobile":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"800"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface-base font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-canvas/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="h-16 w-full px-gutter lg:px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg shrink-0"><div class="flex items-center gap-space-sm"><img alt="Document Chaser Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrC45jgoPn_NcaPH4vp0muO034ZgsWwIOmBru5tBOrRtCGqsDFaZdnm7F8ln0AIiaAaAuDWYWnUwIqawjF-6zdjArFSmbViAZ5M6lYO9T7jytRcUv-GAsIosR5iizlwMwn6Xy2a7y4_A1P1Cw-zTObBFAkVl4ft472SifDIyR-Y65L6LJwZy95SGSLXe3l5iTPefEnINDKzrlwAud4a-klQ8q91eMf7n94fbJt0CKnlE"/><div class="flex flex-col justify-center"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-text-primary tracking-tight">Document Chaser</span><span class="px-space-xs py-[2px] rounded-lg bg-surface-container-high text-on-surface font-label-sm text-label-sm tracking-widest uppercase">SYNTHETIC DATA</span></div><span class="font-label-md text-label-md text-text-muted">Onboarding Ops</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container rounded-lg font-bold"><a class="px-space-sm py-space-xs font-label-lg text-label-lg text-secondary hover:text-text-primary transition-colors" data-path="case-queue" href="#">Case Queue</a><a class="px-space-sm py-space-xs font-label-lg text-label-lg text-secondary hover:text-text-primary transition-colors" data-path="case-detail-cs-1041" href="#">Case Detail (CS-1041)</a><a class="px-space-sm py-space-xs font-label-lg text-label-lg text-secondary hover:text-text-primary transition-colors" data-path="rm-review" href="#">RM Review</a><a class="px-space-sm py-space-xs font-label-lg text-label-lg text-secondary hover:text-text-primary transition-colors" data-path="follow-up-tracker-cs-1052" href="#">Follow-up Tracker (CS-1052)</a><a class="px-space-sm py-space-xs font-label-lg text-label-lg text-secondary hover:text-text-primary transition-colors" data-path="measure-dashboard" href="#">Measure Dashboard</a></nav></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container"><span class="w-2 h-2 rounded-full bg-tertiary"></span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">PROD-SIM // CLUSTER-US</span></div><div class="hidden lg:flex flex-col text-right"><span class="font-label-md text-label-md text-text-primary">RM Operations</span><span class="font-label-sm text-label-sm text-text-muted">Desk 4 • Global Onboarding</span></div><button aria-label="Notifications" class="relative p-space-xs rounded-lg hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-secondary hover:text-text-primary text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-primary-container"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface-base min-h-screen"><div class="flex flex-col w-full">
+<!-- Cinematic Ambient Backdrop Light Glow -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/4 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-20 right-10 w-72 h-72 bg-tertiary-container/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative px-gutter lg:px-margin-desktop py-space-lg flex flex-col gap-space-lg">
+<!-- Breadcrumb & Top Utility Strip -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-text-muted">
+<a class="hover:text-text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span>Case Queue</span>
+</a>
+<span class="text-secondary/40">/</span>
+<span class="text-text-primary font-semibold">CS-1041</span>
+<span class="text-secondary/40">/</span>
+<span class="text-text-muted">Document Checklist</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-[2px] rounded-lg bg-surface-container-high text-on-surface font-label-sm text-label-sm tracking-widest uppercase">
+            SYNTHETIC DATA
+          </span>
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+<span>LIVE SLA CLOCK</span>
+</div>
+</div>
+</div>
+<!-- Case Header & Hero Metadata Block -->
+<div class="bg-surface-canvas rounded-xl shadow-xl overflow-hidden relative">
+<!-- Visual Scrim Accent Line -->
+<div class="h-1 w-full bg-gradient-to-r from-primary-container via-primary-fixed-dim/40 to-surface-canvas"></div>
+<div class="p-space-lg lg:p-space-xl flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<!-- Left: Entity & RM Intel -->
+<div class="flex flex-col gap-space-sm min-w-0 max-w-3xl">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-headline-md text-headline-md lg:font-headline-lg lg:text-headline-lg text-text-primary tracking-tight font-bold">
+                CS-1041
+              </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-secondary font-label-sm text-label-sm uppercase tracking-wider font-bold">
+                Corporate Onboarding
+              </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-tertiary font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+                Risk: Medium
+              </span>
+</div>
+<div class="flex items-baseline gap-space-sm flex-wrap">
+<h1 class="font-headline-md text-headline-md text-text-primary font-bold tracking-tight">
+                Lumen Textiles Ltd
+              </h1>
+<span class="font-body-md text-body-md text-text-muted">
+                Enterprise ID • GB-REG-84920412
+              </span>
+</div>
+<!-- Metadata Strip (Asymmetric Bento Tokens) -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs pt-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider">Relationship Mgr</span>
+<span class="font-label-lg text-label-lg text-text-primary font-semibold truncate">A. Patel</span>
+<span class="font-body-sm text-body-sm text-text-muted">Comm. Banking</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider">Days Open</span>
+<span class="font-label-lg text-label-lg text-primary-fixed-dim font-bold flex items-center gap-1">
+                  9 Days
+                  <span class="material-symbols-outlined text-[14px] text-error">trending_up</span>
+</span>
+<span class="font-body-sm text-body-sm text-text-muted">Started 07 Nov</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider">Target Complete</span>
+<span class="font-label-lg text-label-lg text-text-primary font-semibold">20 Nov 2026</span>
+<span class="font-body-sm text-body-sm text-text-muted">6 days remaining</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider">Jurisdiction</span>
+<span class="font-label-lg text-label-lg text-text-primary font-semibold">United Kingdom</span>
+<span class="font-body-sm text-body-sm text-text-muted">FCA Scope Tier-2</span>
+</div>
+</div>
+</div>
+<!-- Right: Hero Visual Actions -->
+<div class="flex flex-col sm:flex-row lg:flex-col gap-space-xs shrink-0 lg:w-72">
+<!-- Primary Red Netflix-Style Chaser CTA -->
+<button class="group relative w-full py-3.5 px-space-md rounded-lg bg-primary-container hover:bg-brand-red-hover text-on-primary-container font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-xs shadow-lg shadow-primary-container/20 transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:translate-x-0.5">outgoing_mail</span>
+<span>Review chaser email</span>
+<span class="ml-auto w-2 h-2 rounded-full bg-text-primary"></span>
+</button>
+<!-- Secondary Actions Stack -->
+<div class="flex flex-col gap-1.5 w-full">
+<button class="w-full py-2.5 px-space-sm rounded-lg bg-surface-container-high hover:bg-surface-bright text-text-primary font-label-md text-label-md font-semibold flex items-center justify-between transition-colors">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">add_circle</span>
+                  Add Document Requirement
+                </span>
+<span class="material-symbols-outlined text-[16px] text-secondary">chevron_right</span>
+</button>
+<div class="grid grid-cols-2 gap-1.5">
+<button class="py-2.5 px-space-sm rounded-lg bg-surface-container-high hover:bg-surface-bright text-text-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px] text-secondary">history</span>
+                  Activity Log
+                </button>
+<button class="py-2.5 px-space-sm rounded-lg bg-surface-container-high hover:bg-surface-bright text-text-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px] text-secondary">swap_horiz</span>
+                  Reassign RM
+                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section: Summary Progress Bar & Cinematic Metrics -->
+<div class="bg-surface-card rounded-xl p-space-md lg:p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-text-primary">
+<span class="material-symbols-outlined text-[24px]">task_alt</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-text-primary font-bold">Document Readiness</span>
+<span class="font-label-sm text-label-sm font-bold px-2 py-0.5 rounded-full bg-primary-container/20 text-primary-fixed-dim">60% Complete</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">10 total files tracked for onboarding audit signoff</p>
+</div>
+</div>
+<!-- Micro Metric Counters -->
+<div class="flex items-center gap-space-md font-label-md text-label-md">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="text-text-muted">Received:</span>
+<span class="text-text-primary font-bold">6</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<span class="text-text-muted">Resubmission:</span>
+<span class="text-text-primary font-bold">1</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="text-text-muted">Missing:</span>
+<span class="text-text-primary font-bold">3</span>
+</div>
+</div>
+</div>
+<!-- Segmented Cinematic Visual Progress Bar -->
+<div class="flex flex-col gap-1.5">
+<div class="w-full h-3 rounded-full bg-surface-container-lowest overflow-hidden flex p-0.5 gap-1">
+<!-- 6 Received = 60% -->
+<div class="h-full rounded-full bg-tertiary transition-all duration-700" style="width: 60%;" title="6 Received (60%)"></div>
+<!-- 1 Resubmission = 10% -->
+<div class="h-full rounded-full bg-outline transition-all duration-700" style="width: 10%;" title="1 Needs Resubmission (10%)"></div>
+<!-- 3 Missing = 30% -->
+<div class="h-full rounded-full bg-primary-container transition-all duration-700" style="width: 30%;" title="3 Missing (30%)"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-text-muted px-0.5">
+<span>Intake Initiated</span>
+<span>Target: 100% Verified</span>
+</div>
+</div>
+</div>
+<!-- Quick Context Info Banners -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Chaser Status Card -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-start gap-space-sm">
+<div class="p-2 rounded-lg bg-primary-container/20 text-primary-fixed-dim shrink-0">
+<span class="material-symbols-outlined text-[20px]">mark_email_unread</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-text-primary font-semibold">Chaser Cadence Active</span>
+<span class="font-body-sm text-body-sm text-text-muted truncate">Follow-up #2 scheduled in 18 hrs to A. Patel</span>
+</div>
+</div>
+<!-- Client Portal Link Card -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-start gap-space-sm">
+<div class="p-2 rounded-lg bg-surface-container-high text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[20px]">encrypted</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-text-primary font-semibold">Secure Upload Link</span>
+<span class="font-body-sm text-body-sm text-text-muted truncate">Client opened upload portal 2 hrs ago</span>
+</div>
+</div>
+<!-- Compliance Deadline -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-start gap-space-sm">
+<div class="p-2 rounded-lg bg-surface-container-high text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">hourglass_top</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-text-primary font-semibold">SLA Target Date</span>
+<span class="font-body-sm text-body-sm text-text-muted truncate">Tier-1 Onboarding Cutoff: 20 Nov 2026</span>
+</div>
+</div>
+</div>
+<!-- Grouped Checklist Stream -->
+<div class="flex flex-col gap-space-xl pb-space-xl">
+<!-- SECTION A: MISSING (3) -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<h2 class="font-headline-sm text-headline-sm text-text-primary font-bold">
+                Missing Documents
+              </h2>
+<span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-primary-fixed-dim font-label-sm text-label-sm font-bold">
+                3 Needs Action
+              </span>
+</div>
+<button class="font-label-md text-label-md text-primary-fixed-dim hover:text-text-primary flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">send</span>
+<span>Chase all 3 missing</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Item 1 -->
+<div class="bg-surface-card hover:bg-surface-overlay transition-colors rounded-xl p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="p-2.5 rounded-lg bg-surface-container-lowest text-primary-container shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">assignment_late</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-lg text-label-lg text-text-primary font-bold">Certificate of incorporation</span>
+<span class="px-2 py-0.5 rounded-md bg-error-container text-error font-label-sm text-label-sm font-bold">Missing</span>
+</div>
+<span class="font-body-md text-body-md text-text-muted mt-0.5">Required for all corporate clients</span>
+<div class="flex items-center gap-space-md mt-1.5 font-body-sm text-body-sm text-secondary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+                      Requested: 10 Nov 2026
+                    </span>
+<span>•</span>
+<span class="text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+                      6 days overdue
+                    </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-end md:self-center">
+<button class="py-2 px-space-md rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-text-primary font-label-md text-label-md font-bold flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[16px]">outgoing_mail</span>
+<span>Chase RM / Client</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-secondary hover:text-text-primary transition-colors" title="Options">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-card hover:bg-surface-overlay transition-colors rounded-xl p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="p-2.5 rounded-lg bg-surface-container-lowest text-primary-container shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">home_pin</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-lg text-label-lg text-text-primary font-bold">Proof of address, director 2</span>
+<span class="px-2 py-0.5 rounded-md bg-error-container text-error font-label-sm text-label-sm font-bold">Missing</span>
+</div>
+<span class="font-body-md text-body-md text-text-muted mt-0.5">Required for each director • Utility bill or bank statement <3 months old</span>
+<div class="flex items-center gap-space-md mt-1.5 font-body-sm text-body-sm text-secondary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+                      Requested: 10 Nov 2026
+                    </span>
+<span>•</span>
+<span class="text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+                      6 days overdue
+                    </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-end md:self-center">
+<button class="py-2 px-space-md rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-text-primary font-label-md text-label-md font-bold flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[16px]">outgoing_mail</span>
+<span>Chase RM / Client</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-secondary hover:text-text-primary transition-colors" title="Options">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="bg-surface-card hover:bg-surface-overlay transition-colors rounded-xl p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="p-2.5 rounded-lg bg-surface-container-lowest text-primary-container shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">badge</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-lg text-label-lg text-text-primary font-bold">Beneficial owner ID, 25%+ holder</span>
+<span class="px-2 py-0.5 rounded-md bg-error-container text-error font-label-sm text-label-sm font-bold">Missing</span>
+</div>
+<span class="font-body-md text-body-md text-text-muted mt-0.5">Required for ownership above 25% (PSC Register Cross-reference)</span>
+<div class="flex items-center gap-space-md mt-1.5 font-body-sm text-body-sm text-secondary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+                      Requested: 12 Nov 2026
+                    </span>
+<span>•</span>
+<span class="text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+                      4 days overdue
+                    </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-end md:self-center">
+<button class="py-2 px-space-md rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-text-primary font-label-md text-label-md font-bold flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[16px]">outgoing_mail</span>
+<span>Chase RM / Client</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-secondary hover:text-text-primary transition-colors" title="Options">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION B: NEEDS RESUBMISSION (1) -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-outline"></span>
+<h2 class="font-headline-sm text-headline-sm text-text-primary font-bold">
+                Needs Resubmission
+              </h2>
+<span class="px-2 py-0.5 rounded-full bg-outline-variant/30 text-on-surface-variant font-label-sm text-label-sm font-bold">
+                1 Warning
+              </span>
+</div>
+<span class="font-body-sm text-body-sm text-text-muted">Requires replacement upload</span>
+</div>
+<!-- Item 4 -->
+<div class="bg-surface-card hover:bg-surface-overlay transition-colors rounded-xl p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="p-2.5 rounded-lg bg-surface-container-lowest text-outline shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">sync_problem</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-lg text-label-lg text-text-primary font-bold">Register of directors</span>
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">Needs resubmission</span>
+</div>
+<span class="font-body-md text-body-md text-error mt-0.5 flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[16px]">info</span>
+                  Dated more than 90 days ago • Needs fresh certified copy
+                </span>
+<div class="flex items-center gap-space-md mt-1.5 font-body-sm text-body-sm text-secondary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+                    Date requested: 14 Nov 2026
+                  </span>
+<span>•</span>
+<span class="text-text-muted">Rejection audit code: DOC-ERR-EXP90</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-end md:self-center">
+<button class="py-2 px-space-md rounded-lg bg-surface-container-high hover:bg-surface-bright text-text-primary font-label-md text-label-md font-bold flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>View Rejected File</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-secondary hover:text-text-primary transition-colors" title="Resend Notice">
+<span class="material-symbols-outlined text-[18px]">forward_to_inbox</span>
+</button>
+</div>
+</div>
+</section>
+<!-- SECTION C: RECEIVED (6) -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<h2 class="font-headline-sm text-headline-sm text-text-primary font-bold">
+                Received & Verified
+              </h2>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container/30 text-tertiary font-label-sm text-label-sm font-bold">
+                6 Completed
+              </span>
+</div>
+<button class="font-label-md text-label-md text-secondary hover:text-text-primary flex items-center gap-1 transition-colors" id="toggleReceivedBtn">
+<span id="toggleText">Collapse verified (6)</span>
+<span class="material-symbols-outlined text-[16px]" id="toggleIcon">expand_less</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-xs transition-all duration-300" id="receivedList">
+<!-- Item 5 -->
+<div class="bg-surface-card/75 hover:bg-surface-card transition-colors rounded-xl p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="p-2.5 rounded-lg bg-surface-container-lowest text-tertiary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">check_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-lg text-label-lg text-text-primary font-medium">Memorandum & Articles of Association</span>
+<span class="px-2 py-0.5 rounded-md bg-tertiary-container/40 text-on-tertiary-container font-label-sm text-label-sm font-bold">Received</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-muted mt-0.5">Constitutive documentation • 44 pages verified</span>
+<div class="flex items-center gap-space-md mt-1 font-body-sm text-body-sm text-secondary">
+<span>Received on 08 Nov 2026</span>
+<span>•</span>
+<span class="text-tertiary">Automated OCR passed</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-end md:self-center">
+<button class="py-1.5 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-secondary hover:text-text-primary font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">file_open</span>
+<span>View PDF</span>
+</button>
+</div>
+</div>
+<!-- Item 6 -->
+<div class="bg-surface-card/75 hover:bg-surface-card transition-colors rounded-xl p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="p-2.5 rounded-lg bg-surface-container-lowest text-tertiary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">check_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-lg text-label-lg text-text-primary font-medium">Proof of address, director 1</span>
+<span class="px-2 py-0.5 rounded-md bg-tertiary-container/40 text-on-tertiary-container font-label-sm text-label-sm font-bold">Received</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-muted mt-0.5">Required for each director • Council Tax Bill dated Oct 2026</span>
+<div class="flex items-center gap-space-md mt-1 font-body-sm text-body-sm text-secondary">
+<span>Received on 08 Nov 2026</span>
+<span>•</span>
+<span class="text-tertiary">Match 100%</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-end md:self-center">
+<button class="py-1.5 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-secondary hover:text-text-primary font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">file_open</span>
+<span>View PDF</span>
+</button>
+</div>
+</div>
+<!-- Item 7 -->
+<div class="bg-surface-card/75 hover:bg-surface-card transition-colors rounded-xl p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="p-2.5 rounded-lg bg-surface-container-lowest text-tertiary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">check_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-lg text-label-lg text-text-primary font-medium">Director 1 Government Photo ID</span>
+<span class="px-2 py-0.5 rounded-md bg-tertiary-container/40 text-on-tertiary-container font-label-sm text-label-sm font-bold">Received</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-muted mt-0.5">Identity verification • UK Passport (Biometric MRZ valid)</span>
+<div class="flex items-center gap-space-md mt-1 font-body-sm text-body-sm text-secondary">
+<span>Received on 08 Nov 2026</span>
+<span>•</span>
+<span class="text-tertiary">Facial match approved</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-end md:self-center">
+<button class="py-1.5 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-secondary hover:text-text-primary font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">file_open</span>
+<span>View PDF</span>
+</button>
+</div>
+</div>
+<!-- Item 8 -->
+<div class="bg-surface-card/75 hover:bg-surface-card transition-colors rounded-xl p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="p-2.5 rounded-lg bg-surface-container-lowest text-tertiary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">check_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-lg text-label-lg text-text-primary font-medium">Tax Identification Certificate</span>
+<span class="px-2 py-0.5 rounded-md bg-tertiary-container/40 text-on-tertiary-container font-label-sm text-label-sm font-bold">Received</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-muted mt-0.5">Statutory compliance • HMRC VAT registration certificate</span>
+<div class="flex items-center gap-space-md mt-1 font-body-sm text-body-sm text-secondary">
+<span>Received on 09 Nov 2026</span>
+<span>•</span>
+<span class="text-tertiary">Direct VIES verified</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-end md:self-center">
+<button class="py-1.5 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-secondary hover:text-text-primary font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">file_open</span>
+<span>View PDF</span>
+</button>
+</div>
+</div>
+<!-- Item 9 -->
+<div class="bg-surface-card/75 hover:bg-surface-card transition-colors rounded-xl p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="p-2.5 rounded-lg bg-surface-container-lowest text-tertiary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">check_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-lg text-label-lg text-text-primary font-medium">Bank Mandate Form</span>
+<span class="px-2 py-0.5 rounded-md bg-tertiary-container/40 text-on-tertiary-container font-label-sm text-label-sm font-bold">Received</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-muted mt-0.5">Account operation • Dual signatory rule enabled</span>
+<div class="flex items-center gap-space-md mt-1 font-body-sm text-body-sm text-secondary">
+<span>Received on 09 Nov 2026</span>
+<span>•</span>
+<span class="text-tertiary">Signatures matched</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-end md:self-center">
+<button class="py-1.5 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-secondary hover:text-text-primary font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">file_open</span>
+<span>View PDF</span>
+</button>
+</div>
+</div>
+<!-- Item 10 -->
+<div class="bg-surface-card/75 hover:bg-surface-card transition-colors rounded-xl p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="p-2.5 rounded-lg bg-surface-container-lowest text-tertiary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">check_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-lg text-label-lg text-text-primary font-medium">AML/KYC Declaration</span>
+<span class="px-2 py-0.5 rounded-md bg-tertiary-container/40 text-on-tertiary-container font-label-sm text-label-sm font-bold">Received</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-muted mt-0.5">Regulatory compliance • Clean sanction screening (World-Check clear)</span>
+<div class="flex items-center gap-space-md mt-1 font-body-sm text-body-sm text-secondary">
+<span>Received on 09 Nov 2026</span>
+<span>•</span>
+<span class="text-tertiary">Zero adverse hits</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-end md:self-center">
+<button class="py-1.5 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-secondary hover:text-text-primary font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">file_open</span>
+<span>View PDF</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<!-- Interactive Modal / Slide-over Drawer for 'Review chaser email' Preview -->
+<div class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-gutter" id="chaserModal">
+<div class="bg-surface-card rounded-xl max-w-2xl w-full p-space-lg flex flex-col gap-space-md shadow-2xl relative">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="p-2 rounded-lg bg-primary-container text-on-primary-container">
+<span class="material-symbols-outlined text-[20px]">outgoing_mail</span>
+</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-bold">Draft Chaser Email</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Target: A. Patel • Client: Lumen Textiles Ltd</p>
+</div>
+</div>
+<button class="p-1 rounded-lg hover:bg-surface-container text-secondary hover:text-text-primary" id="closeModalBtn">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg flex flex-col gap-2 font-body-sm text-body-sm">
+<div class="flex gap-2">
+<span class="text-text-muted w-16">To:</span>
+<span class="text-text-primary font-medium">a.patel@globalbank-ops.sim, finance@lumentextiles.example</span>
+</div>
+<div class="flex gap-2">
+<span class="text-text-muted w-16">Subject:</span>
+<span class="text-text-primary font-medium">[Action Required] Urgent Outstanding Documents • CS-1041 (Lumen Textiles Ltd)</span>
+</div>
+<div class="h-[1px] bg-surface-container my-1"></div>
+<div class="text-on-surface flex flex-col gap-2 leading-relaxed">
+<p>Dear A. Patel & Lumen Textiles Management Team,</p>
+<p>Regarding your onboarding review (Case Ref: <strong>CS-1041</strong>), 6 of 10 items have been cleared. To ensure your trading facility activates by <strong>20 Nov 2026</strong>, please upload the following remaining items:</p>
+<ul class="list-disc pl-5 text-error">
+<li><strong>Certificate of Incorporation</strong> (Missing - statutory)</li>
+<li><strong>Proof of Address, Director 2</strong> (Missing - utility bill <90 days)</li>
+<li><strong>Beneficial Owner ID, 25%+ holder</strong> (Missing - government photo ID)</li>
+</ul>
+<p class="text-on-surface-variant">Additionally, <strong>Register of Directors</strong> requires fresh re-certification as the previous file exceeded the 90-day validity mark.</p>
+<p>Please utilize your encrypted single-use upload link provided below.</p>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-2">
+<button class="py-2 px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-secondary hover:text-text-primary font-label-md text-label-md" id="cancelModalBtn">
+          Cancel
+        </button>
+<button class="py-2 px-space-lg rounded-lg bg-primary-container hover:bg-brand-red-hover text-on-primary-container font-label-md text-label-md font-bold flex items-center gap-1.5 shadow-md" id="sendChaserBtn">
+<span class="material-symbols-outlined text-[16px]">send</span>
+<span>Dispatch Chaser Now</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+    // Dynamic interactive behavior for accordion collapse and modal
+    (function() {
+      const toggleBtn = document.getElementById('toggleReceivedBtn');
+      const receivedList = document.getElementById('receivedList');
+      const toggleText = document.getElementById('toggleText');
+      const toggleIcon = document.getElementById('toggleIcon');
+      
+      let isCollapsed = false;
+      if (toggleBtn && receivedList) {
+        toggleBtn.addEventListener('click', function() {
+          isCollapsed = !isCollapsed;
+          if (isCollapsed) {
+            receivedList.classList.add('hidden');
+            toggleText.textContent = 'Expand verified (6)';
+            toggleIcon.textContent = 'expand_more';
+          } else {
+            receivedList.classList.remove('hidden');
+            toggleText.textContent = 'Collapse verified (6)';
+            toggleIcon.textContent = 'expand_less';
+          }
+        });
+      }
+
+      // Review Chaser Email Modal Trigger
+      const modal = document.getElementById('chaserModal');
+      const openButtons = document.querySelectorAll('button:has(span:contains("Review chaser email")), button:contains("Review chaser email")');
+      const reviewBtn = Array.from(document.querySelectorAll('button')).find(el => el.textContent.includes('Review chaser email'));
+      const closeModalBtn = document.getElementById('closeModalBtn');
+      const cancelModalBtn = document.getElementById('cancelModalBtn');
+      const sendChaserBtn = document.getElementById('sendChaserBtn');
+
+      function openModal() {
+        if (modal) {
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        }
+      }
+
+      function closeModal() {
+        if (modal) {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
+      }
+
+      if (reviewBtn) {
+        reviewBtn.addEventListener('click', openModal);
+      }
+
+      if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+      if (cancelModalBtn) cancelModalBtn.addEventListener('click', closeModal);
+
+      if (sendChaserBtn) {
+        sendChaserBtn.addEventListener('click', function() {
+          sendChaserBtn.innerHTML = '<span class="material-symbols-outlined text-[16px] animate-spin">refresh</span> Dispatching...';
+          setTimeout(() => {
+            sendChaserBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">done</span> Dispatched!';
+            setTimeout(() => {
+              closeModal();
+              sendChaserBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">send</span><span>Dispatch Chaser Now</span>';
+            }, 1000);
+          }, 800);
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_4px_rgba(0,0,0,0.4)]"><div class="w-full px-gutter lg:px-gutter-desktop py-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm text-text-muted font-body-sm text-body-sm"><div>© 2025 Document Chaser • Enterprise Onboarding & Verification Operations</div><div class="flex items-center gap-space-md"><span class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Core Engine Live</span><span>Security Enclave Active</span><span>Audit Log v2.4.9</span></div></div></footer></body></html>

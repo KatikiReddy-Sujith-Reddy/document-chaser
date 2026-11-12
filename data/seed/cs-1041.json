@@ -1,0 +1,50 @@
+{
+  "isSynthetic": true,
+  "client": {
+    "id": "client-lumen",
+    "name": "Lumen Textiles Ltd",
+    "clientType": "corporate",
+    "isSynthetic": true
+  },
+  "case": {
+    "id": "CS-1041",
+    "clientId": "client-lumen",
+    "rmName": "A. Patel",
+    "openedOn": "2026-11-03",
+    "approvedOn": null,
+    "status": "ready_for_review",
+    "isSynthetic": true
+  },
+  "requirements": [
+    { "id": "1041-INC", "caseId": "CS-1041", "requirementCode": "INC", "requestedOn": "2026-10-28", "receivedOn": "2026-11-02", "status": "received", "isSynthetic": true },
+    { "id": "1041-DIR", "caseId": "CS-1041", "requirementCode": "DIR", "requestedOn": "2026-10-28", "receivedOn": null, "status": "needs_resubmission", "isSynthetic": true },
+    { "id": "1041-ADDR", "caseId": "CS-1041", "requirementCode": "ADDR", "requestedOn": "2026-10-29", "receivedOn": "2026-11-03", "status": "received", "isSynthetic": true },
+    { "id": "1041-OWN", "caseId": "CS-1041", "requirementCode": "OWN", "requestedOn": null, "receivedOn": null, "status": "missing", "isSynthetic": true },
+    { "id": "1041-TAX", "caseId": "CS-1041", "requirementCode": "TAX", "requestedOn": "2026-10-30", "receivedOn": "2026-11-05", "status": "received", "isSynthetic": true },
+    { "id": "1041-BANK", "caseId": "CS-1041", "requirementCode": "BANK", "requestedOn": "2026-10-30", "receivedOn": "2026-11-04", "status": "received", "isSynthetic": true },
+    { "id": "1041-ART", "caseId": "CS-1041", "requirementCode": "ART", "requestedOn": "2026-10-31", "receivedOn": "2026-11-06", "status": "received", "isSynthetic": true },
+    { "id": "1041-ID", "caseId": "CS-1041", "requirementCode": "ID", "requestedOn": null, "receivedOn": null, "status": "missing", "isSynthetic": true },
+    { "id": "1041-RES", "caseId": "CS-1041", "requirementCode": "RES", "requestedOn": "2026-10-31", "receivedOn": "2026-11-07", "status": "received", "isSynthetic": true },
+    { "id": "1041-FIN", "caseId": "CS-1041", "requirementCode": "FIN", "requestedOn": null, "receivedOn": null, "status": "missing", "isSynthetic": true }
+  ],
+  "documents": [
+    { "id": "1041-doc-inc", "caseId": "CS-1041", "requirementCode": "INC", "issuedOn": "2026-10-20", "expiresOn": null, "legible": true, "submittedOn": "2026-11-02", "isSynthetic": true },
+    { "id": "1041-doc-dir", "caseId": "CS-1041", "requirementCode": "DIR", "issuedOn": "2026-04-16", "expiresOn": null, "legible": true, "submittedOn": "2026-11-01", "isSynthetic": true },
+    { "id": "1041-doc-addr", "caseId": "CS-1041", "requirementCode": "ADDR", "issuedOn": "2026-10-21", "expiresOn": null, "legible": true, "submittedOn": "2026-11-03", "isSynthetic": true },
+    { "id": "1041-doc-tax", "caseId": "CS-1041", "requirementCode": "TAX", "issuedOn": "2026-10-18", "expiresOn": null, "legible": true, "submittedOn": "2026-11-05", "isSynthetic": true },
+    { "id": "1041-doc-bank", "caseId": "CS-1041", "requirementCode": "BANK", "issuedOn": "2026-10-22", "expiresOn": null, "legible": true, "submittedOn": "2026-11-04", "isSynthetic": true },
+    { "id": "1041-doc-art", "caseId": "CS-1041", "requirementCode": "ART", "issuedOn": "2026-10-20", "expiresOn": null, "legible": true, "submittedOn": "2026-11-06", "isSynthetic": true },
+    { "id": "1041-doc-res", "caseId": "CS-1041", "requirementCode": "RES", "issuedOn": "2026-10-23", "expiresOn": null, "legible": true, "submittedOn": "2026-11-07", "isSynthetic": true }
+  ],
+  "events": [
+    { "id": "1041-request-1", "caseId": "CS-1041", "type": "requested", "occurredOn": "2026-10-28", "payload": "{}", "isSynthetic": true },
+    { "id": "1041-request-2", "caseId": "CS-1041", "type": "requested", "occurredOn": "2026-10-31", "payload": "{}", "isSynthetic": true },
+    { "id": "1041-request-3", "caseId": "CS-1041", "type": "requested", "occurredOn": "2026-11-02", "payload": "{}", "isSynthetic": true },
+    { "id": "1041-received-inc", "caseId": "CS-1041", "type": "received", "occurredOn": "2026-11-02", "payload": "{\"requirementCode\":\"INC\"}", "isSynthetic": true },
+    { "id": "1041-received-addr", "caseId": "CS-1041", "type": "received", "occurredOn": "2026-11-03", "payload": "{\"requirementCode\":\"ADDR\"}", "isSynthetic": true },
+    { "id": "1041-received-tax", "caseId": "CS-1041", "type": "received", "occurredOn": "2026-11-05", "payload": "{\"requirementCode\":\"TAX\"}", "isSynthetic": true },
+    { "id": "1041-received-bank", "caseId": "CS-1041", "type": "received", "occurredOn": "2026-11-04", "payload": "{\"requirementCode\":\"BANK\"}", "isSynthetic": true },
+    { "id": "1041-received-art", "caseId": "CS-1041", "type": "received", "occurredOn": "2026-11-06", "payload": "{\"requirementCode\":\"ART\"}", "isSynthetic": true },
+    { "id": "1041-received-res", "caseId": "CS-1041", "type": "received", "occurredOn": "2026-11-07", "payload": "{\"requirementCode\":\"RES\"}", "isSynthetic": true }
+  ]
+}

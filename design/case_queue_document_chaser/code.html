@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"error":"#ffb4ab","outline-variant":"#5e3f3b","on-surface-variant":"#e9bcb6","tertiary-fixed-dim":"#bcc4f3","surface-base":"#0F0F0F","secondary-fixed":"#e4e2e1","on-error":"#690005","inverse-surface":"#e5e2e1","surface":"#131313","primary-container":"#e50914","primary-fixed-dim":"#ffb4aa","error-container":"#93000a","surface-container-high":"#2a2a2a","surface-container-low":"#1c1b1b","secondary":"#c8c6c6","tertiary-container":"#68709a","outline":"#af8782","on-secondary-fixed":"#1b1c1c","tertiary":"#bcc4f3","surface-canvas":"#141414","on-primary-container":"#fff7f6","on-error-container":"#ffdad6","secondary-fixed-dim":"#c8c6c6","secondary-container":"#474747","on-primary":"#690003","inverse-primary":"#c0000c","text-muted":"#A3A3A3","on-tertiary-fixed-variant":"#3c456c","brand-red-hover":"#F40612","surface-container":"#201f1f","text-primary":"#FFFFFF","surface-tint":"#ffb4aa","surface-container-highest":"#353534","primary":"#ffb4aa","on-primary-fixed-variant":"#930007","tertiary-fixed":"#dde1ff","surface-card":"#181818","background":"#131313","on-secondary-container":"#b6b5b4","surface-bright":"#393939","primary-fixed":"#ffdad5","surface-container-lowest":"#0e0e0e","on-tertiary-container":"#faf8ff","on-secondary":"#303030","on-background":"#e5e2e1","surface-overlay":"#232323","on-secondary-fixed-variant":"#474747","inverse-on-surface":"#313030","on-tertiary-fixed":"#0f193d","on-tertiary":"#252e54","surface-variant":"#353534","surface-dim":"#131313","on-surface":"#e5e2e1","on-primary-fixed":"#410001"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-lg":"1.5rem","space-xl":"2.5rem","gutter":"1rem","margin":"1rem","margin-desktop":"3.5rem","space-xs":"0.25rem","space-sm":"0.5rem","gutter-desktop":"1.5rem","margin-tablet":"2rem","space-md":"1rem"},fontFamily:{"label-sm":["Geist"],"headline-lg-mobile":["Geist"],"headline-lg":["Geist"],"label-md":["Geist"],"label-lg":["Geist"],"headline-md":["Geist"],"headline-sm":["Geist"],"body-md":["Geist"],"display-hero-mobile":["Geist"],"display-hero":["Geist"],"body-sm":["Geist"],"body-lg":["Geist"]},fontSize:{"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"700"}],"headline-lg-mobile":["24px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"display-hero-mobile":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"800"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface-base font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-canvas/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="h-16 w-full px-gutter lg:px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg shrink-0"><div class="flex items-center gap-space-sm"><img alt="Document Chaser Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrC45jgoPn_NcaPH4vp0muO034ZgsWwIOmBru5tBOrRtCGqsDFaZdnm7F8ln0AIiaAaAuDWYWnUwIqawjF-6zdjArFSmbViAZ5M6lYO9T7jytRcUv-GAsIosR5iizlwMwn6Xy2a7y4_A1P1Cw-zTObBFAkVl4ft472SifDIyR-Y65L6LJwZy95SGSLXe3l5iTPefEnINDKzrlwAud4a-klQ8q91eMf7n94fbJt0CKnlE"/><div class="flex flex-col justify-center"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-text-primary tracking-tight">Document Chaser</span><span class="px-space-xs py-[2px] rounded-lg bg-surface-container-high text-on-surface font-label-sm text-label-sm tracking-widest uppercase">SYNTHETIC DATA</span></div><span class="font-label-md text-label-md text-text-muted">Onboarding Ops</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container rounded-lg font-bold"><a aria-current="page" class="px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary-container rounded-lg font-bold" data-path="case-queue" href="#">Case Queue</a><a class="px-space-sm py-space-xs font-label-lg text-label-lg text-secondary hover:text-text-primary transition-colors" data-path="case-detail-cs-1041" href="#">Case Detail (CS-1041)</a><a class="px-space-sm py-space-xs font-label-lg text-label-lg text-secondary hover:text-text-primary transition-colors" data-path="rm-review" href="#">RM Review</a><a class="px-space-sm py-space-xs font-label-lg text-label-lg text-secondary hover:text-text-primary transition-colors" data-path="follow-up-tracker-cs-1052" href="#">Follow-up Tracker (CS-1052)</a><a class="px-space-sm py-space-xs font-label-lg text-label-lg text-secondary hover:text-text-primary transition-colors" data-path="measure-dashboard" href="#">Measure Dashboard</a></nav></div><div class="flex items-center gap-space-md shrink-0"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container"><span class="w-2 h-2 rounded-full bg-tertiary"></span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">PROD-SIM // CLUSTER-US</span></div><div class="hidden lg:flex flex-col text-right"><span class="font-label-md text-label-md text-text-primary">RM Operations</span><span class="font-label-sm text-label-sm text-text-muted">Desk 4 • Global Onboarding</span></div><button aria-label="Notifications" class="relative p-space-xs rounded-lg hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-secondary hover:text-text-primary text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-primary-container"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface-base min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Ambient Banner / Breadcrumb Micro-bar -->
+<div class="relative w-full bg-surface-canvas overflow-hidden px-gutter lg:px-margin-desktop py-space-sm shadow-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm uppercase tracking-wider text-text-muted">
+<span class="text-tertiary">Portfolio Operations</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface">Queue Orchestration</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary-container font-bold">Active SLA Watchlist</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+<span>Live Sync: 32s ago</span>
+</div>
+<div class="px-space-xs py-[2px] rounded-lg bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+          SYNTHETIC REPOSITORY
+        </div>
+</div>
+</div>
+</div>
+<!-- Main Hero & Metrics Stage -->
+<div class="relative w-full px-gutter lg:px-margin-desktop pt-space-lg pb-space-xl bg-gradient-to-b from-surface-canvas via-surface to-surface-base">
+<!-- Background atmospheric glow -->
+<div class="absolute top-0 right-1/4 w-96 h-64 bg-primary-container/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -top-10 left-10 w-72 h-48 bg-tertiary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-lg">
+<!-- Title + Action Ribbon -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-secondary font-label-sm text-label-sm tracking-widest uppercase">Global AML / KYC Desk</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm text-text-muted">Direct Escrow & Corporate Banking</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-text-primary tracking-tight">Case Queue</h1>
+<p class="font-body-md text-body-md text-text-muted max-w-2xl">Corporate Onboarding Active Chasing Pipeline. Automated document chase triggers, verification discrepancies, and relationship manager escalation protocols.</p>
+</div>
+<!-- Global Batch Actions -->
+<div class="flex items-center gap-space-sm shrink-0 flex-wrap">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-xl bg-surface-container-high hover:bg-surface-bright text-text-primary font-label-lg text-label-lg transition-transform active:scale-95 shadow-md" id="batch-trigger-btn">
+<span class="material-symbols-outlined text-[18px] text-tertiary">bolt</span>
+<span>Batch Reminder Check</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-xl bg-surface-container-high hover:bg-surface-bright text-text-primary font-label-lg text-label-lg transition-transform active:scale-95 shadow-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">file_download</span>
+<span>Export Summary</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-xl bg-primary-container hover:bg-brand-red-hover text-on-primary-container font-label-lg text-label-lg transition-transform active:scale-95 shadow-lg">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>New Ingestion Case</span>
+</button>
+</div>
+</div>
+<!-- KPI Stats Ribbon (5 Tiles + Ambient Gauge Visual) -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-space-sm">
+<!-- Open Cases -->
+<div class="relative overflow-hidden p-space-md rounded-xl bg-surface-card hover:bg-surface-container transition-all shadow-md group">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-text-muted uppercase tracking-wider">Open Cases</span>
+<span class="material-symbols-outlined text-secondary text-[20px] group-hover:text-text-primary transition-colors">folder_open</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-text-primary">03</span>
+<span class="font-label-sm text-label-sm text-text-muted">active</span>
+</div>
+<div class="mt-space-xs flex items-center gap-1 font-label-sm text-label-sm text-tertiary">
+<span class="material-symbols-outlined text-[14px]">horizontal_rule</span>
+<span>At standard capacity</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-tertiary to-transparent opacity-60"></div>
+</div>
+<!-- Awaiting Client -->
+<div class="relative overflow-hidden p-space-md rounded-xl bg-surface-card hover:bg-surface-container transition-all shadow-md group">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-text-muted uppercase tracking-wider">Awaiting Client</span>
+<span class="material-symbols-outlined text-error text-[20px] group-hover:scale-110 transition-transform">schedule</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-error">01</span>
+<span class="font-label-sm text-label-sm text-error/80">stalled</span>
+</div>
+<div class="mt-space-xs flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-error">arrow_upward</span>
+<span>CS-1041 3 docs req.</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-primary-container to-transparent opacity-80"></div>
+</div>
+<!-- Ready for RM -->
+<div class="relative overflow-hidden p-space-md rounded-xl bg-surface-card hover:bg-surface-container transition-all shadow-md group">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-text-muted uppercase tracking-wider">Ready for RM</span>
+<span class="material-symbols-outlined text-tertiary text-[20px] group-hover:scale-110 transition-transform">fact_check</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-text-primary">01</span>
+<span class="font-label-sm text-label-sm text-text-muted">queued</span>
+</div>
+<div class="mt-space-xs flex items-center gap-1 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-[14px] text-tertiary">check_circle</span>
+<span>Actionable sign-off</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-tertiary-fixed to-transparent opacity-60"></div>
+</div>
+<!-- Reminders Due -->
+<div class="relative overflow-hidden p-space-md rounded-xl bg-surface-card hover:bg-surface-container transition-all shadow-md group">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-text-muted uppercase tracking-wider">Reminders Due</span>
+<span class="material-symbols-outlined text-primary text-[20px] group-hover:scale-110 transition-transform">notification_important</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-primary-fixed-dim">01</span>
+<span class="font-label-sm text-label-sm text-primary">escalation</span>
+</div>
+<div class="mt-space-xs flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="material-symbols-outlined text-[14px]">priority_high</span>
+<span>Harbor Dental (14d)</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-primary to-transparent opacity-70"></div>
+</div>
+<!-- Avg Days Open -->
+<div class="relative col-span-2 md:col-span-1 lg:col-span-1 overflow-hidden p-space-md rounded-xl bg-surface-card hover:bg-surface-container transition-all shadow-md group">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-text-muted uppercase tracking-wider">Avg Days Open</span>
+<div class="w-5 h-5 flex items-center justify-center">
+<!-- Mini Inline SVG Progress Ring -->
+<svg class="w-5 h-5 -rotate-90" viewbox="0 0 36 36">
+<circle class="text-surface-bright" cx="18" cy="18" fill="none" r="14" stroke="currentColor" stroke-width="3"></circle>
+<circle class="text-primary-container" cx="18" cy="18" fill="none" r="14" stroke="currentColor" stroke-dasharray="88" stroke-dashoffset="36" stroke-linecap="round" stroke-width="3"></circle>
+</svg>
+</div>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-text-primary">9.7<span class="text-headline-sm text-text-muted">d</span></span>
+<span class="font-label-sm text-label-sm text-error">+2.1d SLA</span>
+</div>
+<div class="mt-space-xs flex items-center gap-1 font-label-sm text-label-sm text-text-muted">
+<span class="material-symbols-outlined text-[14px]">speed</span>
+<span>Target benchmark: 7.0d</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-surface-bright to-transparent"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Worktable Section with Floating Search & Filters -->
+<div class="w-full px-gutter lg:px-margin-desktop py-space-md">
+<!-- Filter Strip -->
+<div class="p-space-md rounded-xl bg-surface-card shadow-lg flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-space-md">
+<!-- Search -->
+<div class="relative flex-1 min-w-[280px]">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-secondary text-[20px]">search</span>
+<input class="w-full pl-11 pr-space-md py-2.5 rounded-lg bg-surface-container-low text-text-primary font-body-md text-body-md placeholder:text-text-muted focus:outline-none focus:bg-surface-container-high transition-colors" id="queue-search" placeholder="Filter by Client name, Case ID (e.g. CS-1041), or RM..." type="text"/>
+<div class="absolute right-space-md top-1/2 -translate-y-1/2 flex items-center gap-1 text-[11px] font-label-sm text-text-muted bg-surface-container px-1.5 py-0.5 rounded">
+<span>⌘</span><span>K</span>
+</div>
+</div>
+<!-- Controls Matrix -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Status Filter -->
+<div class="relative min-w-[170px]">
+<select class="w-full appearance-none bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md px-space-md py-2.5 pr-8 rounded-lg cursor-pointer focus:outline-none transition-colors">
+<option value="all">Status: All (3 Active)</option>
+<option value="reminder">Reminder Due to RM</option>
+<option value="awaiting">Awaiting Client</option>
+<option value="ready">Ready for RM Review</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-sm top-1/2 -translate-y-1/2 text-secondary pointer-events-none text-[18px]">expand_more</span>
+</div>
+<!-- RM Filter -->
+<div class="relative min-w-[140px]">
+<select class="w-full appearance-none bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md px-space-md py-2.5 pr-8 rounded-lg cursor-pointer focus:outline-none transition-colors">
+<option value="all">RM: All Leads</option>
+<option value="s-reyes">S. Reyes (Harbor)</option>
+<option value="a-patel">A. Patel (Lumen)</option>
+<option value="j-moreau">J. Moreau (Orion)</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-sm top-1/2 -translate-y-1/2 text-secondary pointer-events-none text-[18px]">expand_more</span>
+</div>
+<!-- Sort Control -->
+<div class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-low text-text-primary">
+<span class="material-symbols-outlined text-[18px] text-primary-container">swap_vert</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-text-muted uppercase tracking-wider leading-none">Sorting Priority</span>
+<span class="font-label-md text-label-md text-text-primary leading-tight">Days open (descending)</span>
+</div>
+</div>
+<!-- View Density Toggle -->
+<div class="flex items-center bg-surface-container-lowest p-1 rounded-lg">
+<button class="p-1.5 rounded bg-surface-container-high text-text-primary" title="Comfortable View">
+<span class="material-symbols-outlined text-[16px]">density_medium</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-secondary hover:text-text-primary" title="Compact View">
+<span class="material-symbols-outlined text-[16px]">density_small</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Active Filter Indicators -->
+<div class="flex items-center gap-space-sm mt-space-sm px-space-xs">
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider">Queue Order:</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface">
+<span>Oldest Open First (SLA Risk Priority)</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-secondary">
+<span>3 of 3 Cases Shown</span>
+</span>
+<button class="font-label-sm text-label-sm text-tertiary hover:underline ml-auto">Reset View Parameters</button>
+</div>
+<!-- Cases Data Master Container (Edge to Edge within margins, fully responsive) -->
+<div class="mt-space-md w-full rounded-xl bg-surface-card shadow-2xl overflow-hidden">
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse min-w-[860px]">
+<thead>
+<tr class="bg-surface-container-lowest/80 text-secondary uppercase font-label-sm text-label-sm tracking-widest">
+<th class="py-space-md px-space-md" scope="col">Case Identifier</th>
+<th class="py-space-md px-space-md" scope="col">Corporate Entity</th>
+<th class="py-space-md px-space-md" scope="col">Assigned RM</th>
+<th class="py-space-md px-space-md" scope="col">Aging Cycle</th>
+<th class="py-space-md px-space-md" scope="col">Deficiency Log</th>
+<th class="py-space-md px-space-md" scope="col">Chase State & Urgency</th>
+<th class="py-space-md px-space-md text-right" scope="col">Operational Direct</th>
+</tr>
+</thead>
+<tbody class="divide-y-0" id="queue-table-body">
+<!-- ROW 1: CS-1052 | Harbor Dental Group (14 days - Reminder due to RM) -->
+<tr class="group bg-surface-card hover:bg-surface-container-high/60 transition-all duration-150">
+<!-- Case ID -->
+<td class="py-space-md px-space-md align-middle">
+<div class="flex items-center gap-space-xs">
+<div class="w-2 h-2 rounded-full bg-primary-fixed-dim"></div>
+<div class="flex flex-col">
+<a class="font-headline-sm text-headline-sm text-primary hover:text-text-primary transition-colors tracking-tight font-bold" data-path="follow-up-tracker-cs-1052" href="#">
+                      CS-1052
+                    </a>
+<span class="font-label-sm text-[11px] text-text-muted">Direct Escrow KYC</span>
+</div>
+</div>
+</td>
+<!-- Client -->
+<td class="py-space-md px-space-md align-middle">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-text-primary font-bold shrink-0">
+                    HD
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-text-primary font-bold truncate">Harbor Dental Group</span>
+<span class="font-body-sm text-body-sm text-text-muted truncate">Mid-Market Healthcare LLC • DE</span>
+</div>
+</div>
+</td>
+<!-- RM -->
+<td class="py-space-md px-space-md align-middle">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-full bg-secondary-container flex items-center justify-center text-text-primary font-label-sm text-label-sm">
+                    SR
+                  </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">S. Reyes</span>
+<span class="font-label-sm text-[11px] text-text-muted">Boston South Desk</span>
+</div>
+</div>
+</td>
+<!-- Days Open (Strictly Descending #1: 14 days) -->
+<td class="py-space-md px-space-md align-middle">
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-headline-sm text-primary-fixed-dim font-bold">14 days</span>
+<span class="font-body-sm text-body-sm text-text-muted">open</span>
+</div>
+<div class="w-24 h-1.5 rounded-full bg-surface-container-highest overflow-hidden mt-1">
+<div class="h-full bg-primary rounded-full" style="width: 100%;"></div>
+</div>
+<span class="font-label-sm text-[10px] text-primary mt-0.5 font-semibold">Exceeded 10d Cap</span>
+</div>
+</td>
+<!-- Missing count -->
+<td class="py-space-md px-space-md align-middle">
+<div class="inline-flex items-center gap-space-xs px-2.5 py-1 rounded-lg bg-surface-container-low text-text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary">warning</span>
+<span class="font-bold">5 missing</span>
+</div>
+<div class="font-label-sm text-[11px] text-text-muted mt-0.5">W9, Beneficial Owner IDs (x3), Articles</div>
+</td>
+<!-- Status badge (AMBER/WARNING PILL 'Reminder due to RM') -->
+<td class="py-space-md px-space-md align-middle">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/20 text-primary-fixed font-label-md text-label-md font-bold tracking-wide">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span>Reminder due to RM</span>
+</div>
+<div class="font-label-sm text-[11px] text-primary-fixed-dim/80 mt-1 pl-1">2nd reminder queued for send</div>
+</td>
+<!-- Actions -->
+<td class="py-space-md px-space-md align-middle text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<a class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-highest hover:bg-text-primary hover:text-surface-base text-text-primary font-label-md text-label-md transition-all shadow group/btn" data-path="follow-up-tracker-cs-1052" href="#">
+<span>View Case</span>
+<span class="material-symbols-outlined text-[16px] group-hover/btn:translate-x-0.5 transition-transform">arrow_forward</span>
+</a>
+<button class="p-2 rounded-lg hover:bg-surface-container-highest text-secondary hover:text-text-primary transition-colors" title="Quick RM Ping">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 2: CS-1041 | Lumen Textiles Ltd (9 days - Awaiting client) -->
+<tr class="group bg-surface-card hover:bg-surface-container-high/60 transition-all duration-150">
+<!-- Case ID -->
+<td class="py-space-md px-space-md align-middle">
+<div class="flex items-center gap-space-xs">
+<div class="w-2 h-2 rounded-full bg-primary-container"></div>
+<div class="flex flex-col">
+<a class="font-headline-sm text-headline-sm text-primary hover:text-text-primary transition-colors tracking-tight font-bold" data-path="case-detail-cs-1041" href="#">
+                      CS-1041
+                    </a>
+<span class="font-label-sm text-[11px] text-text-muted">Treasury Onboarding</span>
+</div>
+</div>
+</td>
+<!-- Client -->
+<td class="py-space-md px-space-md align-middle">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-text-primary font-bold shrink-0">
+                    LT
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-text-primary font-bold truncate">Lumen Textiles Ltd</span>
+<span class="font-body-sm text-body-sm text-text-muted truncate">Apparel Manufacturing Corp • NY</span>
+</div>
+</div>
+</td>
+<!-- RM -->
+<td class="py-space-md px-space-md align-middle">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-full bg-secondary-container flex items-center justify-center text-text-primary font-label-sm text-label-sm">
+                    AP
+                  </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">A. Patel</span>
+<span class="font-label-sm text-[11px] text-text-muted">Metro Commercial Team</span>
+</div>
+</div>
+</td>
+<!-- Days Open (Strictly Descending #2: 9 days) -->
+<td class="py-space-md px-space-md align-middle">
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-headline-sm text-error font-bold">9 days</span>
+<span class="font-body-sm text-body-sm text-text-muted">open</span>
+</div>
+<div class="w-24 h-1.5 rounded-full bg-surface-container-highest overflow-hidden mt-1">
+<div class="h-full bg-primary-container rounded-full" style="width: 68%;"></div>
+</div>
+<span class="font-label-sm text-[10px] text-on-surface-variant mt-0.5">Critical Milestone: Day 10</span>
+</div>
+</td>
+<!-- Missing count -->
+<td class="py-space-md px-space-md align-middle">
+<div class="inline-flex items-center gap-space-xs px-2.5 py-1 rounded-lg bg-surface-container-low text-text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-error">priority_high</span>
+<span class="font-bold">3 missing</span>
+</div>
+<div class="font-label-sm text-[11px] text-text-muted mt-0.5">Audited Financials, Certificate of Inc, UBO Proof</div>
+</td>
+<!-- Status badge (RED/URGENT PILL 'Awaiting client') -->
+<td class="py-space-md px-space-md align-middle">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-md text-label-md font-bold tracking-wide">
+<span class="w-2 h-2 rounded-full bg-on-error-container"></span>
+<span>Awaiting client</span>
+</div>
+<div class="font-label-sm text-[11px] text-error mt-1 pl-1">Client portal upload link sent (3d ago)</div>
+</td>
+<!-- Actions -->
+<td class="py-space-md px-space-md align-middle text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<a class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-highest hover:bg-text-primary hover:text-surface-base text-text-primary font-label-md text-label-md transition-all shadow group/btn" data-path="case-detail-cs-1041" href="#">
+<span>View Case</span>
+<span class="material-symbols-outlined text-[16px] group-hover/btn:translate-x-0.5 transition-transform">arrow_forward</span>
+</a>
+<button class="p-2 rounded-lg hover:bg-surface-container-highest text-secondary hover:text-text-primary transition-colors" title="Resend Secure Chaser Email">
+<span class="material-symbols-outlined text-[18px]">outgoing_mail</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 3: CS-1047 | Orion Freight Co (6 days - Ready for RM review) -->
+<tr class="group bg-surface-card hover:bg-surface-container-high/60 transition-all duration-150">
+<!-- Case ID -->
+<td class="py-space-md px-space-md align-middle">
+<div class="flex items-center gap-space-xs">
+<div class="w-2 h-2 rounded-full bg-tertiary"></div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-text-primary tracking-tight font-bold">
+                      CS-1047
+                    </span>
+<span class="font-label-sm text-[11px] text-text-muted">Global Freight Finance</span>
+</div>
+</div>
+</td>
+<!-- Client -->
+<td class="py-space-md px-space-md align-middle">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-text-primary font-bold shrink-0">
+                    OF
+                  </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-text-primary font-bold truncate">Orion Freight Co</span>
+<span class="font-body-sm text-body-sm text-text-muted truncate">Logistics & Supply Intermediary • IL</span>
+</div>
+</div>
+</td>
+<!-- RM -->
+<td class="py-space-md px-space-md align-middle">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-full bg-secondary-container flex items-center justify-center text-text-primary font-label-sm text-label-sm">
+                    JM
+                  </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">J. Moreau</span>
+<span class="font-label-sm text-[11px] text-text-muted">Chicago Hub Desk</span>
+</div>
+</div>
+</td>
+<!-- Days Open (Strictly Descending #3: 6 days) -->
+<td class="py-space-md px-space-md align-middle">
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold">6 days</span>
+<span class="font-body-sm text-body-sm text-text-muted">open</span>
+</div>
+<div class="w-24 h-1.5 rounded-full bg-surface-container-highest overflow-hidden mt-1">
+<div class="h-full bg-tertiary-fixed-dim rounded-full" style="width: 42%;"></div>
+</div>
+<span class="font-label-sm text-[10px] text-tertiary mt-0.5 font-medium">Inside SLA Window (7d)</span>
+</div>
+</td>
+<!-- Missing count -->
+<td class="py-space-md px-space-md align-middle">
+<div class="inline-flex items-center gap-space-xs px-2.5 py-1 rounded-lg bg-surface-container-low text-text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check</span>
+<span class="font-bold">1 missing</span>
+</div>
+<div class="font-label-sm text-[11px] text-text-muted mt-0.5">Final Authorized Signatory Matrix (Pending Sign)</div>
+</td>
+<!-- Status badge (GREEN/ACTION PILL 'Ready for RM review') -->
+<td class="py-space-md px-space-md align-middle">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-bright text-text-primary font-label-md text-label-md font-bold tracking-wide">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Ready for RM review</span>
+</div>
+<div class="font-label-sm text-[11px] text-secondary mt-1 pl-1">All pre-checks cleared by Ops Engine</div>
+</td>
+<!-- Actions -->
+<td class="py-space-md px-space-md align-middle text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<a class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-highest hover:bg-text-primary hover:text-surface-base text-text-primary font-label-md text-label-md transition-all shadow group/btn" data-path="rm-review" href="#">
+<span>View Case</span>
+<span class="material-symbols-outlined text-[16px] group-hover/btn:translate-x-0.5 transition-transform">arrow_forward</span>
+</a>
+<button class="p-2 rounded-lg hover:bg-surface-container-highest text-secondary hover:text-text-primary transition-colors" title="Launch RM Approval Console">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Micro-summary bar -->
+<div class="px-space-md py-space-sm bg-surface-container-lowest flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-text-muted">
+<div class="flex items-center gap-space-sm">
+<span>Sort Criterion: <strong class="text-on-surface">Days Open DESC (14d → 9d → 6d)</strong></span>
+<span class="w-1 h-1 rounded-full bg-surface-container-highest"></span>
+<span>SLA Breach Threshold: <strong class="text-error">10 Days</strong></span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-1 text-on-surface">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+            1 Case at Urgent Action State
+          </span>
+<span class="flex items-center gap-1 text-on-surface">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            1 Case Overdue for Follow-up
+          </span>
+</div>
+</div>
+</div>
+<!-- Quick Navigation / Context Cards Bento (Enhancing visual storytelling) -->
+<div class="mt-space-lg grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Direct Highlight CS-1041 -->
+<div class="p-space-md rounded-xl bg-surface-card hover:bg-surface-container transition-all flex flex-col justify-between shadow-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">High Priority Chaser</span>
+<span class="font-label-sm text-label-sm text-text-muted">Case CS-1041</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mt-1">Lumen Textiles Ltd</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Client missing 3 primary compliance files for offshore entity verification. SLA deadline expires in 24 hours.</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-error">9 Days Open • Stalled</span>
+<a class="font-label-md text-label-md text-tertiary hover:underline flex items-center gap-1" data-path="case-detail-cs-1041" href="#">
+<span>Direct Jump</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</a>
+</div>
+</div>
+<!-- Direct Highlight CS-1052 -->
+<div class="p-space-md rounded-xl bg-surface-card hover:bg-surface-container transition-all flex flex-col justify-between shadow-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-primary/20 text-primary-fixed-dim font-label-sm text-label-sm">RM Escalation</span>
+<span class="font-label-sm text-label-sm text-text-muted">Case CS-1052</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mt-1">Harbor Dental Group</h3>
+<p class="font-body-sm text-body-sm text-text-muted">14 days pending. Automated chases triggered 3 times with zero client acknowledgement. RM phone intervention required.</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary">14 Days Open • Follow-up Due</span>
+<a class="font-label-md text-label-md text-tertiary hover:underline flex items-center gap-1" data-path="follow-up-tracker-cs-1052" href="#">
+<span>Direct Jump</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</a>
+</div>
+</div>
+<!-- Operations Engine Activity Stream -->
+<div class="p-space-md rounded-xl bg-surface-card hover:bg-surface-container transition-all flex flex-col justify-between shadow-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-tertiary font-label-sm text-label-sm">Automated Agent</span>
+<span class="font-label-sm text-label-sm text-secondary">Daemon #04</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mt-1">Next Auto-Chase Sweep</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Scheduled batch validation will re-evaluate document ingestion hashes and send SMS/Email notifications at 17:00 EST.</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-muted">In 2 hours 14 mins</span>
+<a class="font-label-md text-label-md text-secondary hover:text-text-primary flex items-center gap-1" data-path="measure-dashboard" href="#">
+<span>Telemetry</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Filter Micro-interaction
+  document.getElementById('queue-search')?.addEventListener('input', function(e) {
+    const val = e.target.value.toLowerCase();
+    const rows = document.querySelectorAll('#queue-table-body tr');
+    rows.forEach(row => {
+      const text = row.innerText.toLowerCase();
+      if(text.includes(val)) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  });
+
+  // Batch action feedback toast simulator
+  document.getElementById('batch-trigger-btn')?.addEventListener('click', function() {
+    const btn = this;
+    const originalText = btn.innerHTML;
+    btn.innerHTML = `<span class="material-symbols-outlined text-[18px] animate-spin text-tertiary">progress_activity</span><span>Validating Rules...</span>`;
+    setTimeout(() => {
+      btn.innerHTML = `<span class="material-symbols-outlined text-[18px] text-tertiary">check_circle</span><span>1 Chase Queued</span>`;
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+      }, 2400);
+    }, 900);
+  });
+</script></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_4px_rgba(0,0,0,0.4)]"><div class="w-full px-gutter lg:px-gutter-desktop py-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm text-text-muted font-body-sm text-body-sm"><div>© 2025 Document Chaser • Enterprise Onboarding & Verification Operations</div><div class="flex items-center gap-space-md"><span class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Core Engine Live</span><span>Security Enclave Active</span><span>Audit Log v2.4.9</span></div></div></footer></body></html>
