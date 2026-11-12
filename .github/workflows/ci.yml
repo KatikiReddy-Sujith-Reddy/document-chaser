@@ -36,16 +36,20 @@ jobs:
         run: npm test
         working-directory: frontend
 
-      - name: Verify bundle secret exclusion
-        run: npm run check:bundle-secret
-        working-directory: frontend
-
       - name: Build backend TypeScript
         run: npm run build
         working-directory: backend
 
       - name: Build frontend bundle
         run: npm run build
+        working-directory: frontend
+
+      - name: Verify bundle secret exclusion
+        run: |
+          if [ ! -f ../.env ]; then
+            echo "GOOGLE_API_KEY=test-canary-secret-key-do-not-leak" > ../.env
+          fi
+          npm run check:bundle-secret
         working-directory: frontend
 
       - name: Build Docker image (CI validation)
